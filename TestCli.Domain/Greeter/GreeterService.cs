@@ -1,7 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace TestCli.Domain.Greeter;
-public class GreeterService
+
+public interface IGreeterService
+{
+    string Greet(GreetRequest request);
+}
+
+public class GreeterService : IGreeterService
 {
     public string Greet(GreetRequest request)
     {
