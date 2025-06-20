@@ -24,6 +24,12 @@ public class GreetTests
     }
 
     [Fact]
+    public void BadTest()
+    {
+        Assert.True(false, "This test is not implemented yet.");
+    }
+
+    [Fact]
     public void GivenRudeGreetingType_ThenReturnsRudeGreeting()
     {
         // arrange
